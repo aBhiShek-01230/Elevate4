@@ -1,0 +1,72 @@
+/* calendar.css */
+
+.cal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 40px; */
+  background-color: #f6f7fb; /* optional overall background */
+  width: 100%;
+}
+
+/* Calendar container */
+.react-calendar {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Remove outer borders */
+.react-calendar__tile {
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 0;
+  transition: all 0.3s ease;
+}
+
+/* Hover and active styles */
+.react-calendar__tile:hover {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__tile--active {
+  background-color: #2563eb; /* blue */
+  color: white;
+}
+
+/* Today */
+.react-calendar__tile--now {
+  background-color: #e0e7ff; /* subtle blue */
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+/* Navigation styles */
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.react-calendar__navigation button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+}
+
+.react-calendar__navigation button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Hide default double arrows if not needed */
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button {
+  display: none;
+}

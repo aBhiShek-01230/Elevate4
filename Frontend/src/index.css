@@ -1,0 +1,41 @@
+@import "tailwindcss";
+/* Animated gradient border (violet-blue-pink) */
+@keyframes gradient-border {
+  0% {
+    border-color: #8e2de2;
+    box-shadow: 0 0 8px #8e2de2;
+  }
+  50% {
+    border-color: #4a00e0;
+    box-shadow: 0 0 12px #00c3ff;
+  }
+  100% {
+    border-color: #ff00cc;
+    box-shadow: 0 0 8px #ff00cc;
+  }
+}
+
+.animate-gradient-border {
+  animation: gradient-border 2s infinite alternate;
+}
+
+/* Skeleton loading shimmer effect */
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+.animate-skeleton {
+  background: linear-gradient(
+    90deg,
+    #eeeeee 25%,
+    #dddddd 50%,
+    #eeeeee 75%
+  );
+  background-size: 800px 104px;
+  animation: shimmer 1.2s linear infinite;
+}
