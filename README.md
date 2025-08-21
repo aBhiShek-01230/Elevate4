@@ -64,10 +64,8 @@ cd ../client
 npm start
 Open your browser at http://localhost:3000
 
-Live Demo & GitHub
-Live Demo: [Link to deployed site]
-
-GitHub Repository: https://github.com/username/elevate
+Live Demo 
+Live Demo: https://elevate-smart.netlify.app/
 
 Contributing
 Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
